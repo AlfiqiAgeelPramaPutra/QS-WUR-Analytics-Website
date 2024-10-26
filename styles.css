@@ -1,0 +1,1063 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header Styling */
+.header {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Navigation Menu */
+.navigation {
+    background-color: #ed1e28; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Component */
+.card {
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #ed1e28; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #b6252a; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: #000; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Title Container */
+.title-container {
+    background-color: #b6252a;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.title-container .back-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title-container .back-button:hover {
+    border: 2px solid transparent;
+    color: #000000;
+}
+
+/* Search Container */
+.search-container {
+    margin: 10px auto;
+    max-width: 800px;
+    padding: 1px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter Container */
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Jarak antara elemen */
+    margin: 20px auto;
+}
+
+.filter-container label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.filter-container select, 
+.filter-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.filter-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ed1e28;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-container button:hover {
+    background-color: #ed1e28;
+}
+
+/* Data Table */
+.data-container {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+.table-container th {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.table-container td {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.table-container a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Info Container */
+.info-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Parameters Container Wrapper */
+.parameters-container-wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Optional: space between the containers */
+}
+
+/* Parameters Containers */
+.parameters-container {
+    flex: 1;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Common styles for parameters */
+.parameters-details {
+    padding: 10px;
+}
+
+.parameters-item {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: #333;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+.pagination a.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* Grid Container */
+.comparison-grid {
+    display: flex;
+    justify-content: center; /* Center all items horizontally */
+    gap: 20px; /* Space between items */
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+/* Table styling for parameter and score display */
+.univ-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.univ-table th, 
+.univ-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.univ-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.univ-table td {
+    color: #555;
+}
+
+/* Wrapper for the entire comparison grid to restrict maximum width */
+.comparison-grid-wrapper {
+    max-width: 1400px; /* Set the maximum width to 1200px */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Optional: Add some padding */
+    display: flex; /* Use flex to create the grid effect */
+    flex-wrap: wrap; /* Allows wrapping of elements to the next row */
+    justify-content: space-between; /* Evenly spaces items horizontally */
+}
+
+/* Individual University Card Container */
+.univ-container {
+    flex: 1;
+    min-width: 300px;
+    max-width:600px; /* Set max-width to 400px per box */
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px; /* Space between items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.univ-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.univ-container h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+.univ-container p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Table Styling Inside University Container */
+.univ-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.univ-table th, 
+.univ-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.univ-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.univ-table td {
+    color: #555;
+    text-align: center; /* Centers the text inside table cells */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .univ-container {
+        max-width: calc(50% - 20px); /* 2 items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .univ-container {
+        max-width: 100%; /* 1 item per row on small screens */
+    }
+}
+
+/* Grid container to hold the university comparison cards */
+.comparison-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+
+/* Enhanced Search Container */
+.search-container.card {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan elemen untuk membungkus jika diperlukan */
+    gap: 15px; /* Ruang antar elemen */
+    justify-content: center; /* Memastikan elemen berada di tengah horizontal */
+    align-items: center; /* Memastikan elemen berada di tengah vertikal */
+}
+
+.search-container.card form {
+    display: flex;
+    flex-direction: row; /* Tata letak elemen dalam form secara horizontal */
+    gap: 15px; /* Ruang antar elemen dalam form */
+    width: 100%;
+    max-width: 1200px; /* Menentukan lebar maksimal form */
+}
+
+.search-container.card label {
+    margin-right: 10px; /* Spasi antara label dan input */
+}
+
+.search-container.card input[type="text"] {
+    margin-right: 10px; /* Spasi antara input fields */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-container.card button {
+    padding: 10px 20px;
+    background-color: #ed1e28; /* Warna tombol pencarian */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-container.card button:hover {
+    background-color: #ed1e28; /* Warna tombol saat hover */
+}
+
+/* Wrapper untuk kedua chart-container */
+.chart-container-wrapper {
+    display: flex;
+    justify-content: space-between; /* Jarak antara kedua grafik */
+    gap: 20px; /* Jarak horizontal antara kedua grafik */
+    margin: 20px auto;
+    max-width: 1400px; /* Maksimal lebar untuk container */
+    align-items: flex-start; /* Pastikan kedua chart berada di level yang sama */
+}
+
+/* Kontainer individual untuk chart Score */
+.chart-container.score-chart {
+    flex: 2; /* Kontainer lebih besar untuk chart Score */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    max-width: 850px; /* Batas lebar khusus untuk chart Score */
+}
+
+/* Kontainer individual untuk chart Rank */
+.chart-container.rank-chart {
+    flex: 1; /* Kontainer lebih kecil untuk chart Rank */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    max-width: 600px; /* Batas lebar khusus untuk chart Rank */
+}
+
+/* Gaya judul chart */
+.chart-container h3 {
+    text-align: center; /* Posisikan judul di tengah */
+    font-size: 22px; /* Besarkan ukuran font */
+    font-weight: bold;
+    margin-bottom: 20px; /* Jarak bawah untuk judul */
+}
+
+/* Canvas untuk grafik */
+.chart-container canvas {
+    width: 100% !important; /* Memastikan canvas mengambil seluruh lebar container */
+    height: auto !important; /* Membuat tinggi otomatis agar proporsional */
+}
+
+/* Navigation Menu */
+.nav-menu {
+    background-color: #ffffff; 
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center; /* Pusatkan menu di tengah */
+    position: relative;
+    border-bottom: 3px solid #efcdcd;
+    border-top: 1px solid #000000;
+}
+
+.nav-links {
+    display: flex; 
+    justify-content: center; 
+    flex-grow: 1; 
+}
+
+.nav-links a {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: all 0.7s ease;
+    position: relative;
+}
+
+.nav-links a.active {
+    background-color: #ed1e28;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links a:hover {
+    background-color: #ed1e28;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Position the right-side content to the far right */
+.nav-right {
+    position: absolute;
+    right: 60px; /* Tempatkan login/logout di sebelah kanan */
+    display: flex;
+    align-items: center;
+}
+
+/* Style for login button */
+.login-button {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-button img.login-logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+.login-button:hover {
+    background-color: #ed1e28;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Dropdown button (Welcome text) */
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: text-shadow 0.3s ease; /* Tambahkan transisi untuk teks */
+}
+
+/* Efek hover untuk Welcome text */
+.dropbtn:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan pada teks saat di-hover */
+    color: #000; /* Memastikan warna tetap hitam */
+}
+
+/* Dropdown styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ed1e28;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* General Container Style */
+.container-input-data {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Style */
+.container-input-data h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Style */
+.custom-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Style */
+.custom-form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* File Input Style */
+.custom-form input[type="file"] {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Submit Button Style */
+.custom-form input[type="submit"] {
+    background-color: #ed1e28;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-form input[type="submit"]:hover {
+    background-color: #ed1e28;
+}
+
+/* styles/sukses.css */
+
+/* Container for status messages */
+.status-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.message-box {
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.message-box.success {
+    background-color: #4CAF50; /* Green for success */
+}
+
+.message-box.error {
+    background-color: #F44336; /* Red for error */
+}
+
+/* Style for the back button */
+.back-button-sukses {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ed1e28; /* Blue for back button */
+    transition: background-color 0.3s ease;
+}
+
+.back-button-sukses:hover {
+    background-color: #b6252a; /* Darker blue on hover */
+}
+
+/* Crawler Form Container */
+.crawler-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Warna mirip dengan card */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Crawler Title */
+.crawler-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+/* Crawler Form */
+.crawler-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Crawler Form Labels */
+.crawler-label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Crawler Input Fields */
+.crawler-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Crawler Submit Button */
+.crawler-submit {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.crawler-submit:hover {
+    background-color: #c0392b;
+}
+
+/* Crawler Output */
+.crawler-output {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    max-height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Crawler Subtitle */
+.crawler-subtitle {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+/* Catatan API Token */
+.api-note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.api-link {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.api-link:hover {
+    text-decoration: underline;
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Modal tersembunyi awalnya */
+    position: fixed;
+    z-index: 1000; /* Z-index yang tinggi untuk memastikan modal muncul di atas elemen lain */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Pusatkan modal secara horizontal */
+    align-items: center; /* Pusatkan modal secara vertikal */
+    background-color: rgba(0, 0, 0, 0.6); /* Background semi-transparan */
+    opacity: 0; /* Mulai dengan opacity 0 */
+    pointer-events: none; /* Jangan biarkan modal menerima klik saat tidak aktif */
+    transition: opacity 0.6s ease; /* Transisi untuk efek muncul lembut */
+}
+
+.modal.show {
+    display: flex; /* Ketika modal ditampilkan, atur display menjadi flex */
+    opacity: 1; /* Ubah opacity untuk menampilkan modal sepenuhnya */
+    pointer-events: auto; /* Biarkan modal menerima klik saat aktif */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow lebih lembut */
+    width: 100%;
+    max-width: 400px; /* Maksimal lebar modal */
+    text-align: center;
+    transform: translateY(-50px);
+    animation: modalFadeIn 0.5s ease; /* Animasi saat muncul */
+    transition: transform 0.3s ease; /* Transisi animasi ketika modal muncul */
+}
+
+.modal.show .modal-content {
+    transform: translateY(0); /* Modal turun ke posisi normal */
+}
+
+/* Animasi modal saat muncul */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tombol close */
+.close {
+    color: #333;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+/* Styling judul modal */
+.modal-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Styling untuk formulir login */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Gaya input */
+.login-form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Gaya saat fokus pada input */
+.login-form input:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+    outline: none;
+}
+
+/* Tombol submit */
+.login-form input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* Gaya hover pada tombol submit */
+.login-form input[type="submit"]:hover {
+    background-color: #218838;
+    box-shadow: 0 4px 12px rgba(33, 136, 56, 0.3);
+}
+
+/* Pesan kesalahan login */
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+    margin-top: 10px;
+}
+
+/* Styling dasar untuk elemen autocomplete */
+.ui-autocomplete {
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 16px; /* Sesuaikan ukuran font */
+    border-radius: 5px;
+}
+
+/* Tampilan elemen item di autocomplete */
+.ui-menu-item {
+    padding: 10px;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Gaya hover ketika item di-hover */
+.ui-menu-item:hover {
+    background-color: #ed1e28;
+}
+
+/* Gaya untuk elemen yang aktif */
+.ui-state-active {
+    background-color: #ed1e28 !important; 
+    color: white !important; 
+}
+
+/* Menambahkan margin pada input field */
+.autocomplete {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Sesuaikan padding input */
+.autocomplete-input {
+    border-radius: 4px;
+    font-size: 6px;
+    width: 100%; /* Full width untuk input */
+}
+
+/* Pengaturan untuk container hasil autocomplete */
+.ui-autocomplete {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    overflow-y: auto;
+    max-height: 150px; /* Maksimal tinggi */
+    list-style: none;
+    padding-left: 0px;
+}
+
+/* Styling untuk item hasil autocomplete */
+.ui-menu-item {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Hasil autocomplete saat hover */
+.ui-menu-item:hover {
+    background-color: #ededed;
+}
+
+
